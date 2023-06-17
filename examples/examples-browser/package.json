@@ -1,11 +1,17 @@
 {
+  "homepage": "http://github.com/jerryduncan/faceRecognition",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d build"
   },
-  "author": "justadudewhohacks",
+  "author": "jerryduncan",
   "license": "MIT",
   "dependencies": {
     "express": "^4.17.1",
     "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
   }
 }
