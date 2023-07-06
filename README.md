@@ -1,8 +1,5 @@
 # faceRecognition system
 
-[![Build Status](https://travis-ci.org/justadudewhohacks/face-api.js.svg?branch=master)](https://travis-ci.org/justadudewhohacks/face-api.js)
-[![Slack](https://slack.bri.im/badge.svg)](https://slack.bri.im)
-
 **JavaScript face recognition API for the browser and nodejs implemented on top of tensorflow.js core ([tensorflow/tfjs-core](https://github.com/tensorflow/tfjs))**
 
 ![faceapi](https://user-images.githubusercontent.com/31125521/57224752-ad3dc080-700a-11e9-85b9-1357b9f9bca4.gif)
@@ -99,7 +96,7 @@ node faceDetection.js
 
 # face-api.js for the Browser
 
-Simply include the latest script from [dist/face-api.js](https://github.com/justadudewhohacks/face-api.js/tree/master/dist).
+Simply include the latest script from [dist/face-api.js](https://github.com/jerryduncan/faceRecognition/tree/main/dist).
 
 Or install it via npm:
 
@@ -812,7 +809,7 @@ This package implements a very lightweight and fast, yet accurate 68 point face 
 
 For face recognition, a ResNet-34 like architecture is implemented to compute a face descriptor (a feature vector with 128 values) from any given face image, which is used to describe the characteristics of a persons face. The model is **not** limited to the set of faces used for training, meaning you can use it for face recognition of any person, for example yourself. You can determine the similarity of two arbitrary faces by comparing their face descriptors, for example by computing the euclidean distance or using any other classifier of your choice.
 
-The neural net is equivalent to the **FaceRecognizerNet** used in [face-recognition.js](https://github.com/justadudewhohacks/face-recognition.js) and the net used in the [dlib](https://github.com/davisking/dlib/blob/master/examples/dnn_face_recognition_ex.cpp) face recognition example. The weights have been trained by [davisking](https://github.com/davisking) and the model achieves a prediction accuracy of 99.38% on the LFW (Labeled Faces in the Wild) benchmark for face recognition.
+The neural net is equivalent to the **FaceRecognizerNet** used in [faceRecognition](https://github.com/jerryduncan/faceRecognition) and the net used in the [dlib](https://github.com/davisking/dlib/blob/master/examples/dnn_face_recognition_ex.cpp) face recognition example. The weights have been trained and the model achieves a prediction accuracy of 99.38% on the LFW (Labeled Faces in the Wild) benchmark for face recognition.
 
 The size of the quantized model is roughly 6.2 MB (**face_recognition_model**).
 
