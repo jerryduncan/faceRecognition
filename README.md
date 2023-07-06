@@ -59,7 +59,7 @@
 Clone the repository:
 
 ``` bash
-git clone https://github.com/justadudewhohacks/face-api.js.git
+git clone https://github.com/jerryduncan/faceRecognition.git
 ```
 
 ## Running the Browser Examples
